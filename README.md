@@ -20,11 +20,11 @@ PhishingDetectionAPI/
 │   ├── Dataset_phishing.csv                      # Kaggle Dataset for training and testing model
 │   └── xgb_model.pkl                             # Pickled XGBoost model
 │
-├── xgb_model.pkl                  # Pickled XGBoost model
-├── Dockerfile                         # Dockerfile for containerizing the Flask application
-├── requirements.txt                   # Python dependencies
-├── README.md                          # This README file
-└── .gitignore                         # Git ignore file to exclude unnecessary files
+├── xgb_model.pkl                                 # Pickled XGBoost model
+├── Dockerfile                                    # Dockerfile for containerizing the Flask application
+├── requirements.txt                              # Python dependencies
+├── README.md                                     # This README file
+└── .gitignore                                    # Git ignore file to exclude unnecessary files
 ```
 
 ## Getting Started
@@ -77,6 +77,17 @@ To get started with the project, follow the instructions below:
    ```
 
 3. The Flask API will be available at `http://localhost:5000/predict`.
+
+OR 
+
+1. Pull Docker repository
+   ```bash
+   docker pull kanikaan/phishing-detection-api:1.0
+   ```
+2. Run Docker Container
+   ```bash
+   docker run -p 5000:5000 kanikaan/phishing-detection-api:1.0
+   ```
 
 ### Testing the API
 
